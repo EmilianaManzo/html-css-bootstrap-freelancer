@@ -7,6 +7,8 @@
   --card-games:#1c83c1;
   --card-safe:#0e38b5;
   --card-submarine:#ccb2a3;
+  --footer_up:#3a546d;
+  --footer_down:#2c3e50;
 }
 
 [class^="container"],
@@ -19,10 +21,25 @@
   border: 1px solid red;
 }
 
+.em_container{
+  width: 70%;
+  min-width: 360px;
+  max-width:1000px;
+  margin: 0 auto;
+}
+
+.pb_xl{
+  padding-bottom: 10rem;
+}
+
 /* HEADER  */
 header{
   height: 80px;
+  width: 100%;
   background-color: var(--header);
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 
 header ul li {
@@ -35,6 +52,13 @@ header ul li {
 /* jumbotrone  */
 .jumbotrone{
   background-color:var(--section);
+  margin-top: 80px;
+}
+
+.colored{
+  height: 5px;
+  width: 100%;
+  border: 1px solid white;
 }
 
 /* portfolio */
@@ -61,4 +85,52 @@ header ul li {
 
 .row .card.submarine{
   background-color:var(--card-submarine) ;
+}
+
+/* about us  */
+.about_us{
+  background-color: var(--section);
+}
+
+/* contact_me */
+.btn_filled{
+  background-color: var(--section);
+  color: white;
+}
+
+/* FOOTER  */
+.footer_up,
+.footer_down{
+  width: 100%;
+}
+
+/* footer_up  */
+.footer_up{
+  background-color: var(--footer_up);
+}
+
+.icon i {
+  color: white;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.footer_up p{
+  font-size: .9rem;
+}
+
+.footer_up span{
+  color: var(--section);
+  font-weight:600 ;
+}
+
+/* .footer_down */
+.footer_down{
+  background-color: var(--footer_down);
+}
+
+.footer_down p{
+  font-size:.8rem;
 }
