@@ -1,0 +1,64 @@
+:root{
+  --header:#2c3e50;
+  --section:#1abc9c;
+  --card-house:#ba4b63;
+  --card-cake:#1ea4b6;
+  --card-circus:#140f0f;
+  --card-games:#1c83c1;
+  --card-safe:#0e38b5;
+  --card-submarine:#ccb2a3;
+}
+
+[class^="container"],
+[class^="row"],
+[class^="col"]{
+  border: 1px solid red;
+}
+
+.debug{
+  border: 1px solid red;
+}
+
+/* HEADER  */
+header{
+  height: 80px;
+  background-color: var(--header);
+}
+
+header ul li {
+  list-style: none;
+}
+
+
+/* MAIN  */
+
+/* jumbotrone  */
+.jumbotrone{
+  background-color:var(--section);
+}
+
+/* portfolio */
+
+.row .card.house{
+  background-color:var(--card-house) ;
+}
+
+.row .card.cake{
+  background-color:var(--card-cake) ;
+}
+
+.row .card.circus{
+  background-color:var(--card-circus) ;
+}
+
+.row .card.games{
+  background-color:var(--card-games) ;
+}
+
+.row .card.safe{
+  background-color:var(--card-safe) ;
+}
+
+.row .card.submarine{
+  background-color:var(--card-submarine) ;
+}
