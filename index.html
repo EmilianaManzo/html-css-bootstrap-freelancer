@@ -6,10 +6,12 @@
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
   <!-- Font Awesome -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css' integrity='sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ==' crossorigin='anonymous'/>
-  <!-- Google Fonts -->
 
+  <!-- CDN Fonts -->
+  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
 
 
   <!-- Style -->
@@ -20,26 +22,51 @@
 <body>
   
   <header >
-    <div class="container-md h-100 ">
+    <div class="container h-100 ">
 
-      <div class="row h-100 align-items-center">
+      <nav class="my-bg navbar navbar-expand-lg py-4  " data-bs-theme="dark">
+        <div class="container ">
+  
+          <a class="navbar-brand text-uppercase fs-4 " href="#">Start Bootstrap</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+            
+              <li class="nav-item">
+                <a class="nav-link  " aria-current="page" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">about</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Contact</a>
+              </li>
+  
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <div class="row h-100 align-items-center">
         <div class="col text-uppercase text-light">
           <div class="logo">start bootstrap</div>
         </div>
 
         <div class="col d-flex align-items-center justify-content-end h-100 ">
 
-          <div class="hamburger text-end d-md-none debug text-light  ">
+          <div class="hamburger text-end d-md-none debug border border-light-subtle  ">
             <i class="fa-solid fa-bars p-1 "></i>
           </div>
     
           <nav class=" d-none d-md-block">
-            <ul class="d-flex text-uppercase m-0 ">
-              <li class="px-1 "><a href="#" class="text-light text-decoration-none">portfolio</a></li>
+            <ul class="d-flex text-uppercase m-0">
+              <li class="px-1"><a href="#" class="text-light text-decoration-none">portfolio</a></li>
               <li class="px-1 "><a href="#" class="text-light text-decoration-none">about</a></li>
               <li class="px-1 "><a href="#" class="text-light text-decoration-none">contact</a></li>
             </ul>
-          </nav>
+          </nav> -->
 
         </div>
 
@@ -50,11 +77,13 @@
   
   <main>
 
-    <section class="jumbotrone py-4 py-md-5  ">
-    <div class="container-md h-100 ">
+    <section class="jumbotrone different_c py-4 py-md-5  ">
+    <div class="container h-100 ">
       <div class="row flex-column text-light">
-        <div class="col text-center ">
-          <img src="" alt="">
+        <div class="col text-center">
+          <div class="image debug">
+            <img src="assets/img/avatar.svg" alt="" class="object-fit-cover">
+          </div>
         </div>
         <div class="col text-center ">
           <h2 class="fs-1">START BOOTSTRAP</h2>
@@ -72,7 +101,7 @@
     </section>
   
     <section class="portfolio py-4 py-md-5">
-      <div class="container-md">
+      <div class="container">
 
         <div class="row">
           <div class="col text-center ">
@@ -81,34 +110,52 @@
           </div>
         </div>
   
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
-          <div class="col p-2">
-            <div class="card house">1</div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 ">
+          <div class="col col_overlay p-2 position-relative ">
+            <div class="card_lay debug position-relative ">
+              <img src="assets/img/cabin.png" alt="" class="w-100 rounded-4">
+              <div id="overlay" class="rounded-4 d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus text-light "></i></div>
+            </div>
           </div>
           <div class="col p-2">
-            <div class="card cake">2</div>
+            <div class="card_lay debug position-relative ">
+              <img src="assets/img/cake.png" alt="" class="w-100 rounded-4">
+              <div id="overlay" class="rounded-4 d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus text-light "></i></div>
+            </div>
           </div>
           <div class="col p-2">
-            <div class="card circus">3</div>
+            <div class="card_lay debug position-relative ">
+              <img src="assets/img/circus.png" alt="" class="w-100 rounded-4">
+              <div id="overlay" class="rounded-4 d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus text-light "></i></div>
+            </div>
           </div>
           <div class="col p-2">
-            <div class="card games">4</div>
+            <div class="card_lay debug position-relative ">
+              <img src="assets/img/game.png" alt="" class="w-100 rounded-4">
+              <div id="overlay" class="rounded-4 d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus text-light "></i></div>
+            </div>
           </div>
           <div class="col p-2">
-            <div class="card safe">5</div>
+            <div class="card_lay debug position-relative ">
+              <img src="assets/img/safe.png" alt="" class="w-100 rounded-4">
+              <div id="overlay" class="rounded-4 d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus text-light "></i></div>
+            </div>
           </div>
           <div class="col p-2">
-            <div class="card submarine">6</div>
+            <div class="card_lay debug position-relative ">
+              <img src="assets/img/submarine.png" alt="" class="w-100 rounded-4">
+              <div id="overlay" class="rounded-4 d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus text-light "></i></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
 
-    <section class="about_us py-4 py-md-5">
+    <section class="about_us different_c py-4 py-md-5">
       <div class="em_container">
 
-        <div class="">
+        <div class="container-fluid">
 
           <div class="row flex-column align-items-center ">
             <div class="col text-center ">
@@ -139,11 +186,14 @@
             <span><i class="fa-solid fa-star"></i></span>
           </div>
           <div class="col">
-            <p class="m-0 py-3 border-bottom border-dark-subtle">Name</p>
-            <p class="m-0 py-3 border-bottom border-dark-subtle">Email Address</p>
-            <p class="m-0 py-3 border-bottom border-dark-subtle">Phone Numbers</p>
-            <p class="messagge m-0 pt-4 pb_xl border-bottom border-dark-subtle ">Message</p>
-            <button class="btn btn-sm my-2 btn_filled">Send</button>
+            <form action="">
+              <input type="text" class="form-control my-3 em_form " placeholder="Name" aria-label="Name">
+              <input type="email" class="form-control my-3 em_form" placeholder="Email Address" aria-label="Email">
+              <input type="text" class="form-control my-3 em_form" placeholder="Phone Number" aria-label="Phone Number">
+              <textarea class="form-control my-3 em_form" placeholder="Leave a comment here" id="floatingTextarea" row="4"></textarea>
+
+              <button type="submit" class="btn my-2 btn_filled">Send</button>
+            </form>
           </div>
         </div>
       </div>
