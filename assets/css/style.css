@@ -15,15 +15,15 @@ body{
   font-family: 'Helvetica Neue', sans-serif;
 }
 
-[class^="container"],
+/* [class^="container"],
 [class^="row"],
 [class^="col"]{
   border: 1px solid red;
-}
+} */
 
-.debug{
+/* .debug{
   border: 1px solid red;
-}
+} */
 
 .em_container{
   width: 70%;
@@ -47,6 +47,10 @@ body{
   aspect-ratio: 1;
 }
 
+.navbar-toggler{
+  border: 1px solid white !important; 
+}
+
 /* HEADER  */
 header{
   height: 80px;
@@ -65,22 +69,30 @@ ul li:hover{
   border-bottom: 2px solid var(--section);
 }
 
-.hamburger i{
-  color: #888888;
+.dannata{
+  font-size: 3rem;
 }
 
+.dannata i{
+  font-size: 2rem;
+}
+
+.jumbotron .dannata::before,
+.jumbotron .dannata::after,
+.portfolio .dannata::before,
+.portfolio .dannata::after,
+.about_us .dannata::before,
+.about_us .dannata::after,
+.contact_me .dannata::before,
+.contact_me .dannata::after{
+  content:"\2015";
+}
 
 /* MAIN  */
 
 /* jumbotrone  */
-.jumbotrone{
+.jumbotron{
   margin-top: 80px;
-}
-
-.colored{
-  height: 5px;
-  width: 100%;
-  border: 1px solid white;
 }
 
 /* portfolio */
@@ -172,8 +184,16 @@ textarea.em_form:focus{
 /* *****************
     MEDIA QUERY 
 ***************** */
-@media screen and {
-  
+@media screen and (min-width:768px) {
+  h1,
+  h2{
+    font-size:larger;
+  }
+
+  .logo{
+    font-size: 1.8rem !important;
+  }
+
 }
 
 
