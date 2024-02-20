@@ -77,15 +77,28 @@ ul li:hover{
   font-size: 2rem;
 }
 
-.jumbotron .dannata::before,
-.jumbotron .dannata::after,
 .portfolio .dannata::before,
 .portfolio .dannata::after,
-.about_us .dannata::before,
-.about_us .dannata::after,
 .contact_me .dannata::before,
 .contact_me .dannata::after{
-  content:"\2015";
+  content:"";
+  display: inline-block;
+  height: 5px;
+  width: 20%;
+  border-radius: 10px;
+  background-color: #140f0f;
+}
+
+.jumbotron .dannata::before,
+.jumbotron .dannata::after,
+.about_us .dannata::before,
+.about_us .dannata::after{
+  content:"";
+  display: inline-block;
+  height: 5px;
+  width: 20%;
+  border-radius: 10px;
+  background-color: white;
 }
 
 /* MAIN  */
